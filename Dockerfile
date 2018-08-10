@@ -16,7 +16,7 @@ WORKDIR /app/playBinary
 
 # set default java opts for running in the container
 ENV DEFAULT_JVM_OPTS "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
-CMD bin/playBinary
+ENTRYPOINT ["bin/playBinary"]
 
 
 
